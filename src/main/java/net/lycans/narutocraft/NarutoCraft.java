@@ -1,5 +1,6 @@
 package net.lycans.narutocraft;
 
+import net.lycans.narutocraft.item.ModItens;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -51,6 +52,10 @@ public class NarutoCraft {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+
+        ModItens.register(modEventBus);
+
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -63,7 +68,11 @@ public class NarutoCraft {
 
     // Add the example block item to the building block tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItens.KUNAI);
+            event.accept(ModItens.RAW_CHAKRA_METAL);
+            event.accept(ModItens.CHAKRA_METAL);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
