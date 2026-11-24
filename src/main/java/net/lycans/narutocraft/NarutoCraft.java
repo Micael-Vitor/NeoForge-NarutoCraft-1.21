@@ -1,5 +1,6 @@
 package net.lycans.narutocraft;
 
+import net.lycans.narutocraft.block.ModBlocks;
 import net.lycans.narutocraft.item.ModItens;
 import org.slf4j.Logger;
 
@@ -54,6 +55,7 @@ public class NarutoCraft {
 
 
         ModItens.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -72,6 +74,10 @@ public class NarutoCraft {
             event.accept(ModItens.KUNAI);
             event.accept(ModItens.RAW_CHAKRA_METAL);
             event.accept(ModItens.CHAKRA_METAL);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.CHAKRA_METAL_BLOCK);
         }
     }
 

@@ -1,5 +1,7 @@
 {
   "item.testemodnarutocraft.kunai": "Kunai",
-  "item.testemodnarutocraft.raw_chakra_metal":"Raw Chakra Metal",
-  "item.testemodnarutocraft.chakra_metal":"Chakra Metal"
+  "item.testemodnarutocraft.raw_chakra_metal":"Raw de Metal Chakra",
+  "item.testemodnarutocraft.chakra_metal":"Metal Chakra",
+
+  "block.testemodnarutocraft.chakra_metal_block": "Bloco de Metal Chakra"
 }
