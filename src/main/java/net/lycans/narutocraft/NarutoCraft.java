@@ -1,6 +1,7 @@
 package net.lycans.narutocraft;
 
 import net.lycans.narutocraft.block.ModBlocks;
+import net.lycans.narutocraft.item.ModCreativeModTab;
 import net.lycans.narutocraft.item.ModItens;
 import org.slf4j.Logger;
 
@@ -53,7 +54,7 @@ public class NarutoCraft {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-
+        ModCreativeModTab.register(modEventBus);
         ModItens.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -78,6 +79,7 @@ public class NarutoCraft {
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.CHAKRA_METAL_BLOCK);
+            event.accept(ModBlocks.CHAKRA_METAL_ORE);
         }
     }
 
