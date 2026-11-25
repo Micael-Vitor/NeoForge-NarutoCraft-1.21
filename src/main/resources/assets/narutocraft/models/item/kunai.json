@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "testemodnarutocraft:item/chakra_metal"
+    "layer0": "narutocraft:item/kunai"
   }
 }

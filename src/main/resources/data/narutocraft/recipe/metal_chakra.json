@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "narutocraft:metal_chakra_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "narutocraft:chakra_metal"
+  }
+}
