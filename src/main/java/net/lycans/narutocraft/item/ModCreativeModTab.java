@@ -31,6 +31,7 @@ public class ModCreativeModTab {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.CHAKRA_METAL_BLOCK);
                         output.accept(ModBlocks.CHAKRA_METAL_ORE);
+                        output.accept(ModBlocks.CHAKRA_METAL_DEEPSLATE_ORE);
                     }).build());
 
     public static void register(IEventBus eventBus){

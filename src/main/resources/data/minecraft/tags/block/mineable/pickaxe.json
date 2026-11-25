@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "narutocraft:chakra_metal_block",
+    "narutocraft:chakra_metal_ore",
+    "narutocraft:chakra_metal_deepslate_ore"
+  ]
+}

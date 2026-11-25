@@ -27,6 +27,10 @@ public class ModBlocks {
             ()-> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> CHAKRA_METAL_DEEPSLATE_ORE = registerBlock("chakra_metal_deepslate_ore",
+            ()-> new DropExperienceBlock(UniformInt.of(3, 6),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
