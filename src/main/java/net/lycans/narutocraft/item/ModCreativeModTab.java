@@ -22,6 +22,7 @@ public class ModCreativeModTab {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept((ModItens.CHAKRA_METAL));
                         output.accept((ModItens.RAW_CHAKRA_METAL));
+                        output.accept((ModItens.FOOD_PILL));
                     }).build());
 
     public static final Supplier<CreativeModeTab> NINJA_BLOCK_TAB = CREATIVE_MODE_TAB.register("ninja_blocks_tab",

@@ -11,10 +11,16 @@ public class ModItens {
 
     public static final DeferredItem<Item> KUNAI = ITEMS.register("kunai",
             ()-> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> RAW_CHAKRA_METAL = ITEMS.register("raw_chakra_metal",
             ()-> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> CHAKRA_METAL = ITEMS.register("chakra_metal",
             ()-> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> FOOD_PILL = ITEMS.register("food_pill",
+            ()-> new Item(new Item.Properties().food(ModFoodProperties.FOOD_PILL)));
+
 
 
     public static void register(IEventBus eventBus){
