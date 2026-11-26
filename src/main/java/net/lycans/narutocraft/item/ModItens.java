@@ -1,6 +1,7 @@
 package net.lycans.narutocraft.item;
 
 import net.lycans.narutocraft.NarutoCraft;
+import net.lycans.narutocraft.item.custom.Food_Pill;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -18,8 +19,8 @@ public class ModItens {
     public static final DeferredItem<Item> CHAKRA_METAL = ITEMS.register("chakra_metal",
             ()-> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> FOOD_PILL = ITEMS.register("food_pill",
-            ()-> new Item(new Item.Properties().food(ModFoodProperties.FOOD_PILL)));
+    public static final DeferredItem<Food_Pill> FOOD_PILL = ITEMS.register("food_pill",
+            () -> new Food_Pill(Food_Pill.FOOD_PILL, Food_Pill.DEFAULT_COOLDOWN_TICKS));
 
 
 
