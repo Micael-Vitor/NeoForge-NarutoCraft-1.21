@@ -40,7 +40,7 @@ public class Food_Pill extends Item {
         ItemStack result = super.finishUsingItem(stack, level, livingEntity);
 
         if (!level.isClientSide()) {
-            // Cura exatamente até o máximo de vida atual (funciona com vida baunilha e mods)
+            // Cura exatamente até o máximo de vida max
             if (livingEntity.getHealth() < livingEntity.getMaxHealth()) {
                 livingEntity.setHealth(livingEntity.getMaxHealth());
             }
