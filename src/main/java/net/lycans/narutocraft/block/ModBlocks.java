@@ -23,9 +23,11 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
+
+    // estou deixando o Ore sem drop de nada, visando excluir futuramente
     public static final DeferredBlock<Block> CHAKRA_METAL_ORE = registerBlock("chakra_metal_ore",
             ()-> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).noLootTable()));
 
     public static final DeferredBlock<Block> CHAKRA_METAL_DEEPSLATE_ORE = registerBlock("chakra_metal_deepslate_ore",
             ()-> new DropExperienceBlock(UniformInt.of(3, 6),
